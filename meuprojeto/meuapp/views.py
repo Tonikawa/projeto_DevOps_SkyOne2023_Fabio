@@ -1,7 +1,4 @@
-from django.urls import path
-from .views import hello_world
+from django.http import HttpResponse
 
-# Create your views here.
-urlpatterns = [
-    path('hello/', hello_world),
-]
+def hello_world(request):
+    return HttpResponse("Olá SkyOne, Sou eu..o Fabio!!!")
